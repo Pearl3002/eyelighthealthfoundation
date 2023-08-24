@@ -518,22 +518,130 @@ footer .newsLetterContainer input{
 /*responsive code starts here*/
 
 
-@media (max-width: 1140px){
+
+@media screen and (max-width: 1140px){
     container{
         width: 100%;
         padding: 0 15px;
     }
-     
+
+   
 }
 
-@media (max-width: 1080px){
+@media screen and (max-width: 1080px){
     .banner h1{
         margin-top: 200px;
     }
     #about .cards{
         justify-content: space-around;
+        height: auto;
     }
     #about .cards > div {
         margin: 10px 0;
     }
 }
+@media screen and (max-width: 1024px){
+    container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    .banner{
+        background: position x 45%;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+    }
+    .projects .boxContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    container{
+        width: 100%;
+        padding: 0 15px;
+    }
+    header nav{
+        position: relative;
+        border: 2px solid #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    header nav::after{
+        top: 17px;
+    }
+    header nav::before{
+        top: 7px;
+    }
+    header nav::after, header nav::before{
+        content: "";
+        height: 2px;
+        width: 17px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left:5px;
+    }
+    header nav ul{
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: 0.5s;
+    }
+    header nav:hover ul{
+        right: 0;
+    }
+    header nav ul li{
+        display: block;
+    }
+
+    header nav ul li a{
+        width: 300px;
+        background-color: #27122c;
+    }
+    .banner{
+        background-position-x: 65%;
+    }
+
+    .banner p{
+        font-size: 14px;
+    }
+
+    .banner p , .bannerh1{
+        width: 70%;
+    }
+
+    #about .cards > div:hover{
+        width: 350px;
+    }
+    
+
+   
+  }
+
+@media  screen and (max-width: 425px) {
+    .banner h1{
+        margin-top: 150px;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .banner button{
+       margin-bottom: 10px;
+    }
+    #about p{
+        text-align: justify;
+    }
+    #about .cards > div:hover{
+        width: 400px;
+        margin-top: 10px;
+        padding: 35px;
+    }
+    .projects .boxContainer{
+        grid-template-columns: 1fr;
+        padding: 35px;
+    }
+
+    footer .container{
+        grid-template-columns: 1fr;
+    }
