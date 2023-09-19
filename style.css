@@ -539,6 +539,11 @@ footer .newsLetterContainer input{
     #about .cards > div {
         margin: 10px 0;
     }
+    .vision .cards{
+        justify-content:space-around;
+        height: auto;
+        margin: 10px 0;
+    }
 }
 @media screen and (max-width: 1024px){
     container{
@@ -640,6 +645,10 @@ footer .newsLetterContainer input{
     .projects .boxContainer{
         grid-template-columns: 1fr;
         padding: 35px;
+    }
+    .vision .cards{
+        grid-template-columns: 1fr;
+        padding: 30px;
     }
 
     footer .container{
